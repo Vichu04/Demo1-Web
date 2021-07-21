@@ -1,0 +1,38 @@
+
+<!-- <div style="flex-grow: inherit; padding-top: 1rem; padding-bottom: 1 rem;"> -->
+
+  <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+
+<app-header></app-header>
+    
+    <nav class="p-2  mt-2 mt-md-0 ms-md-auto" >
+
+      <a class=" decoratelink" [routerLink]="['/solutionsLink']">Solutions</a>
+      <a class=" decoratelink" href="#">Features</a>
+      <a class=" decoratelink" [routerLink]="['/enterpriseLink']">Enterprise</a>
+      <a class=" decoratelink" [routerLink]="['/supportLink']">Support</a>
+
+    
+    <a class="btn btn-outline-primary fnclr" style=" border-radius: 15px;" onclick="openForm()">Sign in</a>
+
+    <div class="form-popup applyborder" style="border-radius: 5px;" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1 style="font-family:sans-serif; align-content: center;">Login</h1>
+    
+        <label for="email"><b>User ID</b></label><br>
+        <input type="email" placeholder="User ID" style="border-radius: 20px;" name="User ID" required><br>
+        
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" style="border-radius: 15px;" name="psw" required>
+
+        <button type="submit" style="border-radius: 15px;" class="btn">Login</button>
+        <button type="button" style="border-radius: 15px;" class="btn cancel" onclick="closeForm()">Close</button> 
+       </form>
+    </div>
+
+  </nav>
+
+  <hr>
+
+</div>
+
